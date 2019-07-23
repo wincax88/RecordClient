@@ -647,10 +647,6 @@
       <Project>{23cb9adb-ba9f-4618-bd0c-589a00a532e5}</Project>
       <Name>Screna</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SingleInstance\SingleInstance.csproj">
-      <Project>{9f469bcc-7680-4a17-a394-0d8e76e5e609}</Project>
-      <Name>SingleInstance</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\record.ico" />
