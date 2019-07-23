@@ -140,6 +140,9 @@ namespace Screna
 
                     _task = Task.Factory.StartNew(() =>
                     {
+                        if (_imageProvider == null)
+                            return false;
+
                         var editableFrame = _imageProvider.Capture();
 
                         if (_cancellationToken.IsCancellationRequested)

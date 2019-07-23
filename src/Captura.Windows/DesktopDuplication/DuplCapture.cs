@@ -73,6 +73,10 @@ namespace DesktopDuplication
                         "Desktop Duplication is not supported on this system.\nIf you have multiple graphic cards, try running Captura on integrated graphics.",
                         e);
                 }
+                finally
+                {
+
+                }
             }
         }
 

@@ -204,6 +204,10 @@ namespace Captura.ViewModels
             {
                 _messageProvider.ShowException(e, e.Message);
 
+                Settings.Audio.RecordMicrophone = false;
+
+                Settings.Audio.RecordSpeaker = false;
+
                 return false;
             }
 
@@ -307,6 +311,10 @@ namespace Captura.ViewModels
             catch (FFmpegNotFoundException)
             {
                 _ffmpegViewsProvider.ShowUnavailable();
+
+                Settings.Audio.RecordMicrophone = false;
+
+                Settings.Audio.RecordSpeaker = false;
 
                 return false;
             }
